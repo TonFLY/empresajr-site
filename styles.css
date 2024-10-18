@@ -215,3 +215,50 @@
 .up i {
   color: #272727;
 }
+
+.success,
+.error {
+  text-align: center;
+}
+
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: tomato;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.owl-carousel img {
+  height: 200px;
+  width: 400px;
+   /* Ajusta a imagem para cobrir totalmente o espaço */
+}
